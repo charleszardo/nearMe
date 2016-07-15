@@ -2,10 +2,10 @@
 <html>
   <head>
     <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet" />
-<script src="js/vendor/angular.min.js"></script>
-    
-
+    <link href="css/main.css" rel="stylesheet">
+		<link href="css/leaflet.css" rel="stylesheet">
+		<script src="js/vendor/angular.min.js"></script>
+		<script src="js/vendor/leaflet.js"></script>
   </head>
   <body ng-app="NearMeApp">
     
@@ -17,6 +17,7 @@
 
     <div class="main" ng-controller="MainController">
       <div class="container-fluid" id="map-canvas">
+				<leaflet></leaflet>
       </div>
     </div>
 
@@ -27,6 +28,7 @@
 		<script src="js/controllers/MainController.js"></script>
 
     <!-- Directives -->
+		<script src="js/vendor/angular-leaflet-directive.min.js"></script>
     
 
     <!-- Services -->
